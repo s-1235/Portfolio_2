@@ -1,0 +1,12 @@
+.abtcnt {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(11, 11, 74, 1) 52%,
+    rgba(9, 43, 50, 1) 100%
+  );
+  display: flex;
+  flex-direction: row;
+}

@@ -1,0 +1,103 @@
+.txtcnt {
+  position: absolute;
+  right: 150px;
+  height: 100vh;
+  width: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+.txtAbout {
+  margin: 0;
+  padding: 0;
+  font-size: 23px;
+  font-weight: bold;
+  color: rgb(105, 25, 255);
+  margin-right: 540px;
+  font-family: "Roboto";
+  margin-bottom: 10px;
+}
+.txtTitle {
+  background: 50% 100% / 50% 50% no-repeat
+    radial-gradient(ellipse at bottom, #fff, transparent, transparent);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+  margin-right: 350px;
+  font-family: "Source Sans Pro", sans-serif;
+  animation: reveal 3000ms ease-in-out forwards 200ms,
+    glow 2500ms linear infinite 2000ms;
+}
+@keyframes reveal {
+  80% {
+    letter-spacing: 8px;
+  }
+  100% {
+    background-size: 300% 300%;
+  }
+}
+@keyframes glow {
+  40% {
+    text-shadow: 0 0 8px #fff;
+  }
+}
+.txtPara {
+  line-height: 26px;
+  width: 573.917px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.7;
+  margin-right: 20px;
+  margin-top: 3 0px;
+  text-align: left;
+}
+.hirebtn {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 40px;
+  font-weight: bold;
+  text-decoration: none;
+  /* letter-spacing: px; */
+  margin-top: 140px;
+  margin-left: 250px;
+  transform: translateX(-50%) translateY(-50%);
+  font-family: "Oswald";
+}
+
+.hirebtn:before,
+.hirebtn:after {
+  content: "";
+  padding: 1em 0.5em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 20px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.hirebtn:before {
+  border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.hirebtn:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
+}
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}

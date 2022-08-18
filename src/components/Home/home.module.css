@@ -1,0 +1,82 @@
+.home {
+  min-height: 100vh;
+  background: url("/public/assets/images/future-grid.webp"),
+    linear-gradient(
+      90deg,
+      rgba(226, 129, 218, 0.9948354341736695) 26%,
+      rgba(187, 77, 230, 1) 46%,
+      rgba(152, 17, 247, 0.6502976190476191) 94%
+    );
+  background-position: -12.555px -5.73px;
+  width: 100wh;
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.heading1 {
+  font-size: 100px;
+  font-family: "Teko", sans-serif;
+  padding: 0;
+  margin: 0;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.heading2 {
+  font-family: "Teko", sans-serif;
+  color: white;
+}
+.heading3 {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.heading3::before,
+.heading3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.heading3::before {
+  background-color: #000000;
+  height: 1px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.heading3::after {
+  content: "Programming &";
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #ececec;
+}
+
+.heading3:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.heading3:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.heading3 span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.heading3:hover span {
+  transform: translate3d(-200%, 0, 0);
+}
+.heading4 {
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,13 @@
+.imgcnt {
+  height: 100vh;
+  width: 50vh;
+  position: relative;
+}
+.img {
+  height: 100vh;
+  width: 200%;
+  margin-left: 80px;
+  object-fit: cover;
+  opacity: 0.8;
+  overflow: hidden;
+}
