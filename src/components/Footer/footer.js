@@ -50,15 +50,21 @@ const Footer = () => {
 
         <div class="footer-left">
           <p class="footer-links">
-            <a class="link-1" onClick={scrollToHome}>
+            <a class="links link-1" onClick={scrollToHome}>
               Home
             </a>
 
-            <a onClick={scrollToWork}>Projects</a>
+            <a class="links link-1" onClick={scrollToWork}>
+              Projects
+            </a>
 
-            <a onClick={scrollToAbout}>About</a>
+            <a class="links link-1" onClick={scrollToAbout}>
+              About
+            </a>
 
-            <a onClick={scrollToContact}>Contact</a>
+            <a class="links link-1" onClick={scrollToContact}>
+              Contact
+            </a>
           </p>
 
           <p>MF Programming &copy; 2022</p>

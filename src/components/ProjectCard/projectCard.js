@@ -43,7 +43,9 @@ const ProjectCard = (props) => {
             </li>
             <li>
               <strong>Github Repository: </strong>
-              <a href={props.link}>Open Code</a>
+              <a class="link" href={props.link}>
+                Open Code
+              </a>
             </li>
           </ul>
         </div>

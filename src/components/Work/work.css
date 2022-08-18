@@ -222,3 +222,33 @@
 #PropertySlider::-webkit-scrollbar {
   display: none;
 }
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .workctn {
+    min-height: 140vh;
+    width: 100%;
+  }
+  .scrolldown1 {
+    margin-bottom: 10px;
+    margin-top: 26px;
+  }
+  .scrolldown2 {
+    margin-bottom: 16px;
+    margin-top: 30px;
+  }
+  #PropertySlider {
+    height: 610px;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+}

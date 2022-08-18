@@ -101,3 +101,59 @@
     transform: translateX(-50%) translateY(-50%) rotate(360deg);
   }
 }
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .txtcnt {
+    right: 110px;
+    margin-top: 30px;
+  }
+  .txtAbout {
+    margin-right: 500px;
+  }
+  .txtTitle {
+    font-size: 45px;
+    margin-right: 315px;
+  }
+  .txtPara {
+    line-height: 23px;
+    width: 500.917px;
+    font-size: 18px;
+    margin-right: 35px;
+    margin-top: 2 0px;
+  }
+  .hirebtn {
+    font-size: 35px;
+    margin-top: 100px;
+    margin-left: 230px;
+  }
+  hirebtn:before,
+  .hirebtn:after {
+    content: "";
+    padding: 1em 0.5em;
+    left: 50%;
+    width: 100%;
+    top: 50%;
+    border: 18px solid;
+  }
+  .hirebtn:before {
+    border-color: #d9524a #d9524a rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+  }
+
+  .hirebtn:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #d9524a #d9524a;
+    box-shadow: 23px 23px 23px rgba(46, 46, 49, 0.8);
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+}
