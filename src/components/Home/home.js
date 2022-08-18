@@ -1,6 +1,8 @@
 import TopBar from "./topBar.js";
 import classes from "./home.module.css";
 import SideBar from "./sideBar.js";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import { AnimatedOnScroll } from "react-animated-css-onscroll";
 // import navBar from "./navBar.js";
 const Home = () => {
   return (
@@ -9,13 +11,17 @@ const Home = () => {
       <SideBar />
       <div className={classes.heading}>
         <h1 className={classes.heading1}>
-          <p className={classes.heading4}>MF </p>
-          <a className={classes.heading3}>
-            <span>Programming &</span>
-          </a>
+          <AnimationOnScroll animateOnce={true} animateIn="animate__rubberBand">
+            <p className={classes.heading4}>MF </p>
+            <a className={classes.heading3}>
+              <span>Programming &</span>
+            </a>
+          </AnimationOnScroll>
         </h1>
         <br />
-        <h1 className={classes.heading2}>Development Studio</h1>
+        <AnimatedOnScroll animationIn="fadeInDownBig">
+          <h1 className={classes.heading2}>Development Studio</h1>
+        </AnimatedOnScroll>
       </div>
     </div>
   );

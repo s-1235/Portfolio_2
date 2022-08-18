@@ -6,6 +6,22 @@ import { SiUpwork } from "react-icons/si";
 import { AiFillGithub } from "react-icons/ai";
 
 const Footer = () => {
+  const scrollToContact = () => {
+    const anchor = document.querySelector("#Contact");
+    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+  const scrollToWork = () => {
+    const anchor = document.querySelector("#Work");
+    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+  const scrollToAbout = () => {
+    const anchor = document.querySelector("#About");
+    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+  const scrollToHome = () => {
+    const anchor = document.querySelector("#Home");
+    anchor.scrollIntoView({ behavior: "smooth", block: "center" });
+  };
   return (
     <div>
       <footer class="footer-distributed">
@@ -34,17 +50,15 @@ const Footer = () => {
 
         <div class="footer-left">
           <p class="footer-links">
-            <a class="link-1" href="#">
+            <a class="link-1" onClick={scrollToHome}>
               Home
             </a>
 
-            <a href="#">Blog</a>
+            <a onClick={scrollToWork}>Projects</a>
 
-            <a href="#">Pricing</a>
+            <a onClick={scrollToAbout}>About</a>
 
-            <a href="#">About</a>
-
-            <a href="#">Contact</a>
+            <a onClick={scrollToContact}>Contact</a>
           </p>
 
           <p>MF Programming &copy; 2022</p>

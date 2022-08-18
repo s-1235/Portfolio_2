@@ -1,5 +1,7 @@
 import "./work.css";
 import ProjectCard from "../ProjectCard/projectCard";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+
 const Work = () => {
   const projects = [
     {
@@ -67,12 +69,17 @@ const Work = () => {
   return (
     <div class="workctn" id="Work">
       <p class="header">Dig Into My Projects World</p>
-      <div class="scrolldown1" onClick={slideTop}>
-        <div class="chevrons1">
-          <div class="chevrondown1"></div>
-          <div class="chevrondown12"></div>
+      <AnimationOnScroll
+        animateIn="animate__shakeY"
+        animateOut="animate__bounceOutLeft"
+      >
+        <div class="scrolldown1" onClick={slideTop}>
+          <div class="chevrons1">
+            <div class="chevrondown1"></div>
+            <div class="chevrondown12"></div>
+          </div>
         </div>
-      </div>
+      </AnimationOnScroll>
       {/* <ProjectCard
         title={projects[0].title}
         description={projects[0].description}
@@ -94,12 +101,17 @@ const Work = () => {
           />
         ))}
       </div>
-      <div class="scrolldown2" onClick={slideDown}>
-        <div class="chevrons2">
-          <div class="chevrondown2"></div>
-          <div class="chevrondown2"></div>
+      <AnimationOnScroll
+        animateIn="animate__shakeY"
+        animateOut="animate__bounceOutRight"
+      >
+        <div class="scrolldown2" onClick={slideDown}>
+          <div class="chevrons2">
+            <div class="chevrondown2"></div>
+            <div class="chevrondown2"></div>
+          </div>
         </div>
-      </div>
+      </AnimationOnScroll>
     </div>
   );
 };
