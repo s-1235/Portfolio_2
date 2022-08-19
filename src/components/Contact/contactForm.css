@@ -177,3 +177,38 @@
     bottom: 100%;
   }
 }
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+  .login-box {
+    margin-top: 420px;
+    margin-left: 400px;
+    width: 400px;
+    padding: 40px;
+  }
+}
+
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+  .login-box {
+    width: 350px;
+    padding: 35px;
+  }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+  .login-box {
+    width: 300px;
+    padding: 30px;
+    margin-left: 350px;
+  }
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+  .login-box {
+    width: 290px;
+    padding: 28px;
+    margin-left: 325px;
+  }
+}

@@ -101,17 +101,19 @@ const Work = () => {
           />
         ))}
       </div>
-      <AnimationOnScroll
-        animateIn="animate__shakeY"
-        animateOut="animate__bounceOutRight"
-      >
-        <div class="scrolldown2" onClick={slideDown}>
-          <div class="chevrons2">
-            <div class="chevrondown2"></div>
-            <div class="chevrondown2"></div>
+      <div class="btncnt">
+        <AnimationOnScroll
+          animateIn="animate__shakeY"
+          animateOut="animate__bounceOutRight"
+        >
+          <div class="scrolldown2" onClick={slideDown}>
+            <div class="chevrons2">
+              <div class="chevrondown2"></div>
+              <div class="chevrondown2"></div>
+            </div>
           </div>
-        </div>
-      </AnimationOnScroll>
+        </AnimationOnScroll>
+      </div>
     </div>
   );
 };
